@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>MyFirstProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet><!-- servlet declaration -->
+  	<servlet-name>first</servlet-name>
+  	<servlet-class>com.myfirstservlet.myfirstservletusingclass</servlet-class>
+  </servlet>	
+  <servlet-mapping><!-- servlet mapping -->
+  	<servlet-name>first</servlet-name>
+  	<url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  
+  <servlet><!-- servlet declaration -->
+  	<servlet-name>third</servlet-name>
+  	<servlet-class>com.myfirstservlet.third</servlet-class>
+  </servlet>	
+  <servlet-mapping><!-- servlet mapping -->
+  	<servlet-name>third</servlet-name>
+  	<url-pattern>/third</url-pattern>
+  </servlet-mapping>
+  
+  <servlet><!-- servlet declaration -->
+  	<servlet-name>forth</servlet-name>
+  	<servlet-class>com.myfirstservlet.forthusinggenericservlet</servlet-class>
+  </servlet>	
+  <servlet-mapping><!-- servlet mapping -->
+  	<servlet-name>forth</servlet-name>
+  	<url-pattern>/forth</url-pattern>
+  </servlet-mapping>
+  
+  <servlet><!-- servlet declaration -->
+  	<servlet-name>fifth</servlet-name>
+  	<servlet-class>com.myfirstservlet.HttpservletFifth</servlet-class>
+  </servlet>	
+  <servlet-mapping><!-- servlet mapping -->
+  	<servlet-name>fifth</servlet-name>
+  	<url-pattern>/fifth</url-pattern>
+  </servlet-mapping>
+  
+  <servlet><!-- servlet declaration -->
+  	<servlet-name>formservlet</servlet-name>
+  	<servlet-class>com.myfirstservlet.formservlet</servlet-class>
+  </servlet>	
+  <servlet-mapping><!-- servlet mapping -->
+  	<servlet-name>formservlet</servlet-name>
+  	<url-pattern>/formservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet><!-- servlet declaration -->
+  	<servlet-name>regsuccess</servlet-name>
+  	<servlet-class>com.myfirstservlet.regsuccess</servlet-class>
+  </servlet>	
+  <servlet-mapping><!-- servlet mapping -->
+  	<servlet-name>regsuccess</servlet-name>
+  	<url-pattern>/regsuccess</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

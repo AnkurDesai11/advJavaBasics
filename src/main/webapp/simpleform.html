@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+	<title>Simple Form</title>
+	<style>
+		.container{
+			width: 40%;
+			border: 1px solid black;
+			margin: auto;
+			padding: 15px;
+			font-size: 15px;
+		}
+		
+		#postform table tr td input{
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h3>Fill form</h3>
+		<form id="postform" action="formservlet" method="post">
+			<table>
+				<tr>
+					<td>Name: </td>
+					<td><input type="text" name="username" placeholder="Enter Name here"/></td>
+				</tr>
+				<tr>
+					<td>Password: </td>
+					<td><input type="password" name="userpass" placeholder="Enter Password here"/></td>
+				</tr>
+				<tr>
+					<td>Email: </td>
+					<td><input type="email" name="usermail" placeholder="Enter Email here"/></td>
+				</tr>
+				<tr>
+					<td>Occupation: </td>
+					<td><input type="radio" name="userrole" value="Student"/> Student &nbsp; &nbsp;<input type="radio" name="userrole" value="Professional"/> Professional </td>
+				</tr>	
+				<tr>
+					<td>
+						Preference:
+					</td>
+					<td>
+						<select name="userpref">
+							<option value="" selected="selected" hidden="hidden">Select Preference</option>
+							<option value="Java">Java</option>
+							<option value="Php">Php</option>
+							<option value="Python">Python</option>
+							<option value="Android">Android</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:right;">
+						<input type="checkbox" value="checked" name="termcond"/>
+					</td>
+					<td>
+						I agree to terms and conditions
+					</td>
+				</tr>
+				<tr>
+					<td >
+						
+					</td>
+					<td>
+						<button type="submit">Register</button>
+						<button type="reset">Reset</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
