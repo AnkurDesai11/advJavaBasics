@@ -19,5 +19,6 @@
 	<h6><a href="simpleform.html">Post form using servlet</a></h6>
 	<h6><a href="urlmodifying.html">Pass info by modifying url</a></h6>
 	<h6><a href="hiddenformfield.html">Pass info by hidden form field</a></h6>
+	<h6><a href="divisionmodule.html">Division module with error handling</a></h6>
 </body>
 </html>
