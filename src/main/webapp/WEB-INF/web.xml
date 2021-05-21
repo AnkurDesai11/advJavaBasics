@@ -69,4 +69,29 @@
   	<url-pattern>/regsuccess</url-pattern>
   </servlet-mapping>
   
+  <servlet><!-- servlet declaration -->
+  	<servlet-name>jstl</servlet-name>
+  	<jsp-file>/jstlexample.jsp</jsp-file>
+  </servlet>	
+  <servlet-mapping><!-- servlet mapping -->
+  	<servlet-name>jstl</servlet-name>
+  	<url-pattern>/jstlexample</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+  	<filter-name>profilefilter</filter-name>
+  	<filter-class>com.filters.ProfileFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>profilefilter</filter-name>
+  	<url-pattern>/ProfileServlet</url-pattern>
+  </filter-mapping>
+  <filter>
+  	<filter-name>orderfilter</filter-name>
+  	<filter-class>com.filters.OrderFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>orderfilter</filter-name>
+  	<url-pattern>/OrderServlet</url-pattern>
+  </filter-mapping>
 </web-app>

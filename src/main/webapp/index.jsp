@@ -22,5 +22,7 @@
 	<h6><a href="divisionmodule.html">Division module with error handling</a></h6>
 	<h6><a href="mytag.jsp">Custom tag</a></h6>
 	<h6><a href="redirect.jsp">Redirection</a></h6>
+	<h6><a href="filterexample.html">Filters</a></h6>
+	<h6><a href="jstlexample">JSTL examples (removed .jsp from url)</a></h6>
 </body>
 </html>

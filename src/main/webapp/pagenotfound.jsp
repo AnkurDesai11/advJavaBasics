@@ -27,7 +27,7 @@
 		<img src="img/404.png" class="img-fluid"/>
 		<h3>Sorry, Page not found</h3>
 		<p><%= exception %></p>
-		<a class="btn btn-outline-primary mt-2" href="divisionmodule.html">Go Back</a>
+		<a class="btn btn-outline-primary mt-2" href="index.jsp">Go Back</a>
 	</div>
 </body>
 </html>

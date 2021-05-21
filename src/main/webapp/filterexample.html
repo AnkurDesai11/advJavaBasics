@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Filter example</title>
+</head>
+<body>
+	<div class="conatainer">
+		<input type="text" id="profile_name" placeholder="Enter profile"/>
+		<button id="profilesubmit">Log profile</button>
+		<input type="text" id="order_name" placeholder="Enter order"/>
+		<button id="ordersubmit">Log order</button>
+		<h3><a href="ProfileServlet">Profile Servlet</a></h3>
+		<h3><a href="OrderServlet">Order Servlet</a></h3>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+	$('#profilesubmit').click(function(){
+		console.log($("#profile_name").val());
+		$.ajax({
+			url : "Setsession",
+			data: { 'sessiontype': "profile", 'val': $("#profile_name").val()},
+			type : "POST"
+		})
+ 	});
+	$('#ordersubmit').click(function(){
+		console.log($("#order_name").val());
+		$.ajax({
+			url : "Setsession",
+			data: { 'sessiontype': "order", 'val': $("#order_name").val()},
+			type : "POST"
+		})
+ 	});
+</script>
+</html>
